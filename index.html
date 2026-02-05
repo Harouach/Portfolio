@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed-Amine Harouach | Portfolio SISR</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MAH<span>.</span></div>
+        <ul>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Étudiant BTS SIO (SISR)</span>
+            <h1>Mohamed-Amine Harouach</h1>
+            <p>Spécialisé dans l'administration système et la sécurité réseau au Lycée Saint-Michel.</p>
+            <div class="hero-btns">
+                <a href="#projets" class="btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="parcours">
+        <div class="container">
+            <h2 class="section-title">Mon Parcours</h2>
+            <div class="timeline">
+                <div class="step">
+                    <div class="step-content">
+                        <span class="location">Lycée Saint-Michel — Annecy | Présent</span>
+                        <h3>BTS SIO - Option SISR</h3>
+                        <p>Focus sur l'infrastructure, le cloud et la cybersécurité.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-content">
+                        <span class="location">Lycée de l'Albanais — Rumilly | Obtenu</span>
+                        <h3>Bac STI2D - SIN</h3>
+                        <p>Initiation aux systèmes d'information et au numérique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="projets">
+        <h2 class="section-title">Projets Récents</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-image"><i class="fas fa-video"></i></div>
+                <div class="card-body">
+                    <h3>Automatisation d'un système</h3>
+                    <p>Automatisation d'un VidéoBooth 360 rendu autonome via scripts et intégration matérielle.</p>
+                    <span class="tag">Système</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image"><i class="fas fa-server"></i></div>
+                <div class="card-body">
+                    <h3>Virtualisation</h3>
+                    <p>Création d'une Virtual Machine sous Linux et déploiement d'un serveur Web sécurisé.</p>
+                    <span class="tag">Cloud</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="contact" class="contact-cta">
+        <h2>Prêt à collaborer ?</h2>
+        <p>Je suis actuellement à la recherche d'un stage ou d'une alternance.</p>
+        
+        <div class="social-links">qu
+            <a href="https://linkedin.com/in/VOTRE_NOM" target="_blank" class="btn-primary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/VOTRE_PSEUDO" target="_blank" class="btn-secondary">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:votre@email.com" class="btn-outline">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+
+
+            
+            <p>&copy; 2026 - Mohamed-Amine Harouach</p>
+            <div class="footer-icons">
+                <a href="https://github.com/VOTRE_PSEUDO" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-harouach" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const title = document.querySelector('.hero h1');
+        const text = title.textContent;
+        title.textContent = '';
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                title.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 80);
+            }
+        }
+        window.onload = typeWriter;
+    </script>
+</body>
+</html>
