@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-black: #0a0a0a;
+    --card-bg: #161616;
+    --text-white: #ffffff;
+    --accent-red: #ff0000;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header & Nav */
+header {
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 2px solid var(--accent-red);
+    padding: 20px 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { font-family: 'Orbitron'; font-size: 1.5rem; color: white; }
+.logo span { color: var(--accent-red); }
+
+nav ul { display: flex; list-style: none; align-items: center; }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+nav ul li a:hover { color: var(--accent-red); }
+
+.nav-social {
+    color: var(--accent-red) !important;
+    border: 1px solid var(--accent-red);
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
+}
+.hero h1 { font-family: 'Orbitron'; font-size: clamp(2rem, 8vw, 3.5rem); }
+.line { height: 4px; width: 80px; background: var(--accent-red); margin: 20px auto; }
+
+/* Sections */
+section { padding: 100px 10%; }
+h2 { font-family: 'Orbitron'; font-size: 1.8rem; margin-bottom: 40px; display: flex; align-items: center; }
+.red-dot { height: 12px; width: 12px; background: var(--accent-red); margin-right: 15px; }
+
+/* Cards & Grid */
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+.skill-card, .project-box { background: var(--card-bg); padding: 25px; border-left: 3px solid var(--accent-red); margin-bottom: 20px; transition: 0.4s; }
+.skill-card:hover { transform: translateY(-5px); }
+ul { list-style: square; padding-left: 20px; font-size: 0.9rem; }
+
+/* Certifications */
+.sub-title-cert { font-family: 'Orbitron'; font-size: 1.2rem; margin: 40px 0 20px 0; }
+.cert-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+.cert-card { background: #1a1a1a; border: 1px solid #333; display: flex; align-items: center; padding: 15px; transition: 0.3s; }
+.cert-card:hover { border-color: var(--accent-red); }
+.cert-icon { font-size: 2rem; margin-right: 20px; }
+.cert-info h4 { color: var(--accent-red); margin-bottom: 5px; }
+
+/* Veille */
+.veille-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.veille-card { background: #111; border: 1px solid #333; padding: 20px; transition: 0.3s; }
+.veille-card:hover { border-color: var(--accent-red); transform: translateY(-5px); }
+.btn-link { color: var(--accent-red); text-decoration: none; font-weight: bold; font-size: 0.8rem; }
+
+/* Contact & Social */
+.contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
+.contact-form { display: flex; flex-direction: column; }
+.contact-form input, .contact-form textarea { background: #111; border: 1px solid #333; color: white; padding: 15px; margin-bottom: 15px; font-family: 'Roboto'; }
+
+.social-links-footer h3 { font-family: 'Orbitron'; margin-bottom: 20px; font-size: 1.1rem; }
+.social-btns { display: flex; gap: 15px; }
+.btn-social { padding: 10px 20px; background: #111; color: white; text-decoration: none; border: 1px solid #333; font-family: 'Orbitron'; font-size: 0.7rem; transition: 0.3s; }
+.btn-social:hover { border-color: var(--accent-red); color: var(--accent-red); box-shadow: 0 0 10px var(--accent-red); }
+
+/* Buttons & Tags */
+.btn-futur { display: inline-block; padding: 12px 30px; border: 1px solid var(--accent-red); color: var(--accent-red); text-decoration: none; font-weight: bold; transition: 0.4s; cursor: pointer; }
+.btn-futur:hover { background: var(--accent-red); color: white; box-shadow: 0 0 15px var(--accent-red); }
+.btn-futur.small { padding: 8px 15px; font-size: 0.8rem; margin-top: 10px; }
+
+.tag { background: var(--accent-red); color: white; padding: 3px 8px; font-size: 0.65rem; font-weight: bold; margin-right: 5px; }
+.tech-stack { font-size: 0.8rem; color: #888; margin-top: 10px; }
+
+footer { text-align: center; padding: 40px; border-top: 1px solid #222; font-size: 0.8rem; color: #666; }
