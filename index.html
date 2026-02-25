@@ -3,122 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed-Amine Harouach | Portfolio SISR</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio | Mohamed Amine - BTS SIO SISR</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">MAH<span>.</span></div>
-        <ul>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <span class="badge">Étudiant BTS SIO (SISR)</span>
-            <h1>Mohamed-Amine Harouach</h1>
-            <p>Spécialisé dans l'administration système et la sécurité réseau au Lycée Saint-Michel.</p>
-            <div class="hero-btns">
-                <a href="#projets" class="btn-primary">Voir mes projets</a>
-                <a href="#contact" class="btn-secondary">Me contacter</a>
-            </div>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO Amine<span>_</span></div>
+            <ul>
+                <li><a href="#accueil">ACCUEIL</a></li>
+                <li><a href="#presentation">QUI SUIS-JE ?</a></li>
+                <li><a href="#competences">COMPÉTENCES</a></li>
+                <li><a href="#realisations">RÉALISATIONS</a></li>
+                <li><a href="#veille">VEILLE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="https://github.com/TON_PROFIL" target="_blank" class="nav-social">GITHUB</a></li>
+                <li><a href="https://linkedin.com/in/TON_PROFIL" target="_blank" class="nav-social">LINKEDIN</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="about" id="parcours">
-        <div class="container">
-            <h2 class="section-title">Mon Parcours</h2>
-            <div class="timeline">
-                <div class="step">
-                    <div class="step-content">
-                        <span class="location">Lycée Saint-Michel — Annecy | Présent</span>
-                        <h3>BTS SIO - Option SISR</h3>
-                        <p>Focus sur l'infrastructure, le cloud et la cybersécurité.</p>
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>SYSTÈMES & RÉSEAUX</h1>
+                <p class="subtitle">BTS SIO SISR - Lycée Saint-Michel Annecy</p>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <section id="presentation">
+            <h2><span class="red-dot"></span> QUI SUIS-JE ?</h2>
+            <div class="content-box">
+                <p>Actuellement en <strong>BTS SIO</strong> option <strong>SISR</strong> au lycée Saint-Michel Annecy.</p>
+                <p>Titulaire d'un <strong>Bac STI2D option SIN</strong> au Lycée de L'Albanais Rumilly.</p>
+                
+                <p>Passionné par l’informatique depuis mon plus jeune âge, j’ai grandi entouré par cette passion, 
+                    notamment grâce à mon beau-frère qui m’a initié dès l’enfance. 
+                    En parallèle, le football, pratiqué pendant 10 ans en club, et la mécanique occupent une place essentielle dans ma vie. 
+                    Le sport et la technologie forment mon équilibre et nourrissent mon ambition de toujours progresser.</p>
+                
+                <p>Mon objectif est de devenir <strong>Administrateur Systèmes & Réseaux</strong> en mettant à profit ma rigueur, ma logique et mon autonomie.</p>
+                
+                <a href="CV.pdf.pdf" class="btn-futur" download>TÉLÉCHARGER MON CV</a>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2><span class="red-dot"></span> MES COMPÉTENCES</h2>
+            <div class="grid-container">
+                <div class="skill-card">
+                    <h3>Systèmes</h3>
+                    <ul>
+                        <li>Virtualisation (VMware Fusion, VirtualBox).</li>
+                        <li>Administration Ubuntu Server & Windows Server.</li>
+                        <li>Gestion de serveurs Web (LAMP).</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Réseaux</h3>
+                    <ul>
+                        <li>Configuration de services (DNS, DHCP).</li>
+                        <li>Sécurisation des flux (Certificats SSL/TLS).</li>
+                        <li>Segmentation VLAN et routage.</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Administration</h3>
+                    <ul>
+                        <li>Infrastructures Client/Serveur.</li>
+                        <li>Services d'annuaire (Active Directory).</li>
+                        <li>Gestion des rôles et des services.</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Sécurité & RGPD</h3>
+                    <ul>
+                        <li>Recommandations de l'ANSSI.</li>
+                        <li>Cloisonnement réseau et accès.</li>
+                        <li>Application des normes RGPD.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="sub-title-cert"><span class="red-dot"></span> CERTIFICATIONS & FORMATIONS</h3>
+            <div class="cert-container">
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <div class="cert-info">
+                        <h4>Maîtrisez les fondamentaux d'Excel</h4>
+                        <p>OpenClassrooms - Gestion de données</p>
                     </div>
                 </div>
-                <div class="step">
-                    <div class="step-content">
-                        <span class="location">Lycée de l'Albanais — Rumilly | Obtenu</span>
-                        <h3>Bac STI2D - SIN</h3>
-                        <p>Initiation aux systèmes d'information et au numérique.</p>
+                <div class="cert-card">
+                    <div class="cert-icon">🔒</div>
+                    <div class="cert-info">
+                        <h4>MOOC Cybersécurité</h4>
+                        <p>ANSSI - Sécurisation des SI</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">⚖️</div>
+                    <div class="cert-info">
+                        <h4>Atelier RGPD</h4>
+                        <p>CNIL - Protection des données</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <main id="projets">
-        <h2 class="section-title">Projets Récents</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="card-image"><i class="fas fa-video"></i></div>
-                <div class="card-body">
-                    <h3>Automatisation d'un système</h3>
-                    <p>Automatisation d'un VidéoBooth 360 rendu autonome via scripts et intégration matérielle.</p>
-                    <span class="tag">Système</span>
+        <section id="realisations">
+            <h2><span class="red-dot"></span> MES RÉALISATIONS</h2>
+            
+            <div class="project-box">
+                <div class="project-header">
+                    <h3>Automatisation d'un Videobooth 360</h3>
+                    <span class="tag">BAC STI2D SIN</span> <span class="tag">CF EVENTS</span>
                 </div>
+                <p>Optimisation d'une machine événementielle pour la rendre totalement autonome, supprimant le besoin d'un opérateur permanent.</p>
+                <p class="tech-stack">Outils : Électronique embarquée, Capteurs, Scripting.</p>
             </div>
 
-            <div class="card">
-                <div class="card-image"><i class="fas fa-server"></i></div>
-                <div class="card-body">
-                    <h3>Virtualisation</h3>
-                    <p>Création d'une Virtual Machine sous Linux et déploiement d'un serveur Web sécurisé.</p>
-                    <span class="tag">Cloud</span>
+            <div class="project-box">
+                <div class="project-header">
+                    <h3>Architecture Web & Sécurisation SSL</h3>
+                    <span class="tag">BTS SIO SISR</span> <span class="tag">TP RÉSEAU</span>
+                </div>
+                <p>Mise en place d'un environnement virtualisé sous <strong>Ubuntu Server</strong> avec installation d'une pile LAMP.</p>
+                
+                <ul>
+                    <li>Configuration d'Apache2, MariaDB et phpMyAdmin.</li>
+                    <li>Génération de certificats <strong>SSL auto-signés</strong> avec OpenSSL.</li>
+                    <li>Mise en place de redirections forcées HTTP vers HTTPS.</li>
+                </ul>
+                <p class="tech-stack">Outils : VMware Fusion, Linux Ubuntu, Apache2, OpenSSL.</p>
+                <div class="project-footer">
+                    <a href="tp_architecture_client_serveur_Mohamed.pdf" target="_blank" class="btn-futur small">CONSULTER LE RAPPORT (PDF)</a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="veille">
+            <h2><span class="red-dot"></span> VEILLE TECHNOLOGIQUE</h2>
+            <div class="veille-grid">
+                <div class="veille-card">
+                    <h4>ANSSI - CERT-FR</h4>
+                    <p>Alertes et avis de sécurité officiels sur les vulnérabilités critiques.</p>
+                    <a href="https://www.cert.ssi.gouv.fr/" target="_blank" class="btn-link">Visiter le site →</a>
+                </div>
+                <div class="veille-card">
+                    <h4>Le Monde Informatique</h4>
+                    <p>Actualités sur les infrastructures, le Cloud et les réseaux.</p>
+                    <a href="https://www.lemondeinformatique.fr/infrastructure/" target="_blank" class="btn-link">Visiter le site →</a>
+                </div>
+                <div class="veille-card">
+                    <h4>ZDNet Sécurité</h4>
+                    <p>Analyses sur les dernières cyberattaques et solutions de protection.</p>
+                    <a href="https://www.zdnet.fr/actualites/securite/" target="_blank" class="btn-link">Visiter le site →</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><span class="red-dot"></span> CONTACT</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Nom">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Votre message"></textarea>
+                    <button type="submit" class="btn-futur">ENVOYER</button>
+                </form>
+
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section id="contact" class="contact-cta">
-        <h2>Prêt à collaborer ?</h2>
-        <p>Je suis actuellement à la recherche d'un stage ou d'une alternance.</p>
-        
-        <div class="social-links">qu
-            <a href="https://linkedin.com/in/VOTRE_NOM" target="_blank" class="btn-primary">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com/VOTRE_PSEUDO" target="_blank" class="btn-secondary">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="mailto:votre@email.com" class="btn-outline">
-                <i class="fas fa-envelope"></i> Email
-            </a>
-        </div>
-    </section>
-
     <footer>
-        <div class="footer-content">
-
-
-            
-            <p>&copy; 2026 - Mohamed-Amine Harouach</p>
-            <div class="footer-icons">
-                <a href="https://github.com/VOTRE_PSEUDO" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mohamed-harouach" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
+        <p>&copy; 2024 - Portfolio Mohamed Amine Harouach</p>
     </footer>
 
-    <script>
-        const title = document.querySelector('.hero h1');
-        const text = title.textContent;
-        title.textContent = '';
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                title.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 80);
-            }
-        }
-        window.onload = typeWriter;
-    </script>
 </body>
 </html>
