@@ -18,7 +18,7 @@
                 <li><a href="#realisations">RÉALISATIONS</a></li>
                 <li><a href="#veille">VEILLE</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="https://github.com/TON_PROFIL" target="_blank" class="nav-social">GITHUB</a></li>
+                <li><a href="https://github.com/Harouach" target="_blank" class="nav-social">GITHUB</a></li>
                 <li><a href="https://fr.linkedin.com/in/mohamed-harouach-628363355" target="_blank" class="nav-social">LINKEDIN</a></li>
             </ul>
         </nav>
@@ -30,6 +30,7 @@
                 <h1>SYSTÈMES & RÉSEAUX</h1>
                 <p class="subtitle">BTS SIO SISR - Lycée Saint-Michel Annecy</p>
                 <div class="line"></div>
+                <p class="hero-desc">Infrastructure · Réseaux · Développement Web · IoT</p>
             </div>
         </section>
 
@@ -38,14 +39,14 @@
             <div class="content-box">
                 <p>Actuellement en <strong>BTS SIO</strong> option <strong>SISR</strong> au lycée Saint-Michel Annecy.</p>
                 <p>Titulaire d'un <strong>Bac STI2D option SIN</strong> au Lycée de L'Albanais Rumilly.</p>
-                
-                <p>Passionné par l’informatique depuis mon plus jeune âge, j’ai grandi entouré par cette passion, 
-                    notamment grâce à mon beau-frère qui m’a initié dès l’enfance. 
-                    En parallèle, le football, pratiqué pendant 10 ans en club, et la mécanique occupent une place essentielle dans ma vie. 
+
+                <p>Passionné par l'informatique depuis mon plus jeune âge, j'ai grandi entouré par cette passion,
+                    notamment grâce à mon beau-frère qui m'a initié dès l'enfance.
+                    En parallèle, le football, pratiqué pendant 10 ans en club, et la mécanique occupent une place essentielle dans ma vie.
                     Le sport et la technologie forment mon équilibre et nourrissent mon ambition de toujours progresser.</p>
-                
+
                 <p>Mon objectif est de devenir <strong>Administrateur Systèmes & Réseaux</strong> en mettant à profit ma rigueur, ma logique et mon autonomie.</p>
-                
+
                 <a href="CV.pdf.pdf" class="btn-futur" download>TÉLÉCHARGER MON CV</a>
             </div>
         </section>
@@ -59,6 +60,8 @@
                         <li>Virtualisation (VMware Fusion, VirtualBox).</li>
                         <li>Administration Ubuntu Server & Windows Server.</li>
                         <li>Gestion de serveurs Web (LAMP).</li>
+                        <li>Docker & conteneurisation.</li>
+                        <li>VPS Linux (Hetzner).</li>
                     </ul>
                 </div>
                 <div class="skill-card">
@@ -67,6 +70,8 @@
                         <li>Configuration de services (DNS, DHCP).</li>
                         <li>Sécurisation des flux (Certificats SSL/TLS).</li>
                         <li>Segmentation VLAN et routage.</li>
+                        <li>Protocoles TCP/IP, SSH, pare-feu UFW.</li>
+                        <li>Diagnostic réseau (tcpdump, netstat).</li>
                     </ul>
                 </div>
                 <div class="skill-card">
@@ -75,6 +80,7 @@
                         <li>Infrastructures Client/Serveur.</li>
                         <li>Services d'annuaire (Active Directory).</li>
                         <li>Gestion des rôles et des services.</li>
+                        <li>Déploiement et supervision (Traccar, PostgreSQL, Nginx).</li>
                     </ul>
                 </div>
                 <div class="skill-card">
@@ -83,6 +89,25 @@
                         <li>Recommandations de l'ANSSI.</li>
                         <li>Cloisonnement réseau et accès.</li>
                         <li>Application des normes RGPD.</li>
+                        <li>Cookie banner & mentions légales.</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Développement Web</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript vanilla.</li>
+                        <li>Internationalisation FR/EN (i18n).</li>
+                        <li>Déploiement Vercel & GitHub Pages.</li>
+                        <li>Intégration Web3Forms.</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>IoT & GPS</h3>
+                    <ul>
+                        <li>Configuration Teltonika FMC130.</li>
+                        <li>Protocole Codec 8 / TCP.</li>
+                        <li>Serveur Traccar (géolocalisation temps réel).</li>
+                        <li>SIM IoT (Simbase), APN, GPRS.</li>
                     </ul>
                 </div>
             </div>
@@ -115,7 +140,39 @@
 
         <section id="realisations">
             <h2><span class="red-dot"></span> MES RÉALISATIONS</h2>
-            
+
+            <div class="project-box">
+                <div class="project-header">
+                    <h3>Site Vitrine Wakti Studio</h3>
+                    <span class="tag">STAGE BTS SIO</span> <span class="tag">WAKTI STUDIO</span> <span class="tag">HTML/CSS/JS</span>
+                </div>
+                <p>Conception et développement complet du site vitrine de l'agence <strong>Wakti Studio</strong> (Viry, Haute-Savoie). Site 9 pages, bilingue FR/EN, conforme RGPD, déployé en production.</p>
+                <ul>
+                    <li>9 pages : accueil, transport, events, studio, sur-mesure, wakti, contact, mentions légales, confidentialité.</li>
+                    <li>Système d'internationalisation FR/EN avec 376 clés de traduction (i18n.js).</li>
+                    <li>Formulaire de contact intégré via Web3Forms.</li>
+                    <li>Cookie banner RGPD conforme.</li>
+                    <li>Déploiement automatique via Vercel (CI/CD GitHub).</li>
+                </ul>
+                <p class="tech-stack">Outils : HTML5, CSS3, JavaScript vanilla, Git, GitHub, Vercel.</p>
+                <a href="https://wakti-studio.vercel.app" target="_blank" class="btn-futur small">VOIR LE SITE →</a>
+            </div>
+
+            <div class="project-box">
+                <div class="project-header">
+                    <h3>Infrastructure GPS/OBD — Tracker Teltonika FMC130</h3>
+                    <span class="tag">STAGE BTS SIO</span> <span class="tag">MF TRANSPORT</span> <span class="tag">IOT</span>
+                </div>
+                <p>Déploiement d'un système de géolocalisation en temps réel pour la flotte de véhicules de <strong>MF Transport</strong>. Configuration complète du tracker jusqu'à la supervision sur carte.</p>
+                <ul>
+                    <li>Configuration du tracker Teltonika FMC130 (IMEI : 864275079390210) avec SIM Simbase.</li>
+                    <li>Déploiement du serveur Traccar sur VPS Hetzner via Docker (Traccar + PostgreSQL + Nginx).</li>
+                    <li>Configuration pare-feu UFW, ouverture des ports réseau, diagnostic tcpdump.</li>
+                    <li>Dispositif GPS-001 opérationnel en temps réel — 705 enregistrements confirmés.</li>
+                </ul>
+                <p class="tech-stack">Outils : Teltonika Configurator, Docker, Linux, SSH, Traccar, PostgreSQL, Nginx.</p>
+            </div>
+
             <div class="project-box">
                 <div class="project-header">
                     <h3>Automatisation d'un Videobooth 360</h3>
@@ -138,6 +195,20 @@
                 </ul>
                 <p class="tech-stack">Outils : VMware Fusion, Linux Ubuntu, Apache2, OpenSSL.</p>
             </div>
+
+            <div class="project-box">
+                <div class="project-header">
+                    <h3>Serveur de Fichiers SMB & Infrastructure VLAN</h3>
+                    <span class="tag">BTS SIO SISR</span> <span class="tag">TP RÉSEAU</span>
+                </div>
+                <p>Mise en place d'un serveur de fichiers SMB sur VM Windows 11 avec segmentation réseau via switch Cisco.</p>
+                <ul>
+                    <li>Configuration switch Cisco : VLAN 10 et VLAN 20, trunk sur Fa0/24.</li>
+                    <li>Partage SMB avec authentification et gestion des droits.</li>
+                    <li>Mode bridge VirtualBox pour intégration réseau réelle.</li>
+                </ul>
+                <p class="tech-stack">Outils : VirtualBox, Windows 11, Cisco, SMB, TCP/IP.</p>
+            </div>
         </section>
 
         <section id="veille">
@@ -158,19 +229,37 @@
                     <p>Analyses sur les dernières cyberattaques et solutions de protection.</p>
                     <a href="https://www.zdnet.fr/actualites/securite/" target="_blank" class="btn-link">Visiter le site →</a>
                 </div>
+                <div class="veille-card">
+                    <h4>Docker Blog</h4>
+                    <p>Actualités sur la conteneurisation, les mises à jour Docker et les bonnes pratiques DevOps.</p>
+                    <a href="https://www.docker.com/blog/" target="_blank" class="btn-link">Visiter le site →</a>
+                </div>
+                <div class="veille-card">
+                    <h4>Hacker News</h4>
+                    <p>Discussions techniques sur les nouvelles technologies, systèmes et réseaux.</p>
+                    <a href="https://news.ycombinator.com/" target="_blank" class="btn-link">Visiter le site →</a>
+                </div>
             </div>
         </section>
 
         <section id="contact">
             <h2><span class="red-dot"></span> CONTACT</h2>
             <div class="contact-container">
-                <form class="contact-form">
-                    <input type="text" placeholder="Nom">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Votre message"></textarea>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
+                    <input type="hidden" name="subject" value="Contact Portfolio - Mohamed Amine">
+                    <input type="text" name="name" placeholder="Nom" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
                     <button type="submit" class="btn-futur">ENVOYER</button>
                 </form>
-
+                <div class="social-links-footer">
+                    <h3>ME RETROUVER</h3>
+                    <div class="social-btns">
+                        <a href="https://github.com/Harouach" target="_blank" class="btn-social">GITHUB</a>
+                        <a href="https://fr.linkedin.com/in/mohamed-harouach-628363355" target="_blank" class="btn-social">LINKEDIN</a>
+                        <a href="mailto:momo.harouach@gmail.com" class="btn-social">EMAIL</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -182,6 +271,3 @@
 
 </body>
 </html>
-
-
-
