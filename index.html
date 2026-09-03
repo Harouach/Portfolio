@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Mohamed Amine - BTS SIO SISR</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+            if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+        })();
+    </script>
 </head>
 <body>
 
@@ -20,6 +27,7 @@
                 <li><a href="#contact">CONTACT</a></li>
                 <li><a href="https://github.com/Harouach" target="_blank" class="nav-social">GITHUB</a></li>
                 <li><a href="https://fr.linkedin.com/in/mohamed-harouach-628363355" target="_blank" class="nav-social">LINKEDIN</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Basculer entre le mode sombre et le mode clair">🌙</button></li>
             </ul>
         </nav>
     </header>
@@ -268,6 +276,31 @@
     <footer>
         <p>&copy; 2026 - Portfolio Mohamed Amine Harouach</p>
     </footer>
+
+    <script>
+        (function () {
+            var btn = document.getElementById('theme-toggle');
+            var root = document.documentElement;
+
+            function updateIcon() {
+                btn.textContent = root.getAttribute('data-theme') === 'light' ? '☀️' : '🌙';
+            }
+
+            updateIcon();
+
+            btn.addEventListener('click', function () {
+                var isLight = root.getAttribute('data-theme') === 'light';
+                if (isLight) {
+                    root.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    root.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                }
+                updateIcon();
+            });
+        })();
+    </script>
 
 </body>
 </html>
