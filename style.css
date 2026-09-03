@@ -32,13 +32,26 @@ html[data-theme="light"] {
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
+html {
     background-color: var(--bg-black);
+}
+
+body {
     color: var(--text-white);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     scroll-behavior: smooth;
-    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s;
+}
+
+#bg-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+    transition: opacity 0.3s;
 }
 
 /* Header & Nav */
@@ -115,6 +128,9 @@ h2 { font-family: 'Orbitron'; font-size: 1.8rem; margin-bottom: 40px; display: f
 .skill-card:hover { transform: translateY(-5px); }
 ul { list-style: square; padding-left: 20px; font-size: 0.9rem; }
 
+.content-box p, .project-box p { margin-bottom: 14px; }
+.project-box ul { margin: 4px 0 14px; }
+
 /* Certifications */
 .sub-title-cert { font-family: 'Orbitron'; font-size: 1.2rem; margin: 40px 0 20px 0; }
 .cert-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
@@ -140,9 +156,9 @@ ul { list-style: square; padding-left: 20px; font-size: 0.9rem; }
 .btn-social:hover { border-color: var(--accent-red); color: var(--accent-red); box-shadow: 0 0 10px var(--accent-red); }
 
 /* Buttons & Tags */
-.btn-futur { display: inline-block; padding: 12px 30px; border: 1px solid var(--accent-red); color: var(--accent-red); text-decoration: none; font-weight: bold; transition: 0.4s; cursor: pointer; }
+.btn-futur { display: inline-block; padding: 12px 30px; border: 1px solid var(--accent-red); background: transparent; color: var(--accent-red); text-decoration: none; font-family: inherit; font-size: 1rem; font-weight: bold; transition: 0.4s; cursor: pointer; margin-top: 20px; }
 .btn-futur:hover { background: var(--accent-red); color: white; box-shadow: 0 0 15px var(--accent-red); }
-.btn-futur.small { padding: 8px 15px; font-size: 0.8rem; margin-top: 10px; }
+.btn-futur.small { padding: 8px 15px; font-size: 0.8rem; margin-top: 16px; }
 
 .tag { background: var(--accent-red); color: white; padding: 3px 8px; font-size: 0.65rem; font-weight: bold; margin-right: 5px; }
 .tech-stack { font-size: 0.8rem; color: var(--muted-text); margin-top: 10px; }
